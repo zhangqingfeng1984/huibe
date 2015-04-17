@@ -1,0 +1,21 @@
+{
+  "name": "huibe",
+  "version": "0.0.0",
+  "authors": [
+    "zhangqingfeng1984"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.11.2",
+    "underscore": "~1.8.3",
+    "backbone": "~1.1.2",
+    "text": "~2.0.14"
+  }
+}
