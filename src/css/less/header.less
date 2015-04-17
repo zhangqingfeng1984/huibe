@@ -1,5 +1,30 @@
-@base: 20px;
-
+.shortcut ul {
+    list-style:none;
+    li {
+        float:left;
+        margin-right:10px;
+        a:hover {
+            background:blue;
+        }        
+    }
+}
+.shortcut:after {
+    clear:both;
+    content: '';
+    display:table;
+}
 .header {
-    width: @base + 12;    
+    padding: 3px;
+    border-radius: 3px;
+    border: 2px dotted #EEE;
+}
+
+table.baoliao {
+    width:100%;
+    border-collapse: collapse;
+    border:1px solid;
+    th,td {
+        text-align:center;
+        border:1px solid;
+    }
 }

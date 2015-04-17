@@ -15,16 +15,53 @@
 <body>
     <div class="shortcut">
         <ul>
-            <li>优惠爆料</li>
-            <li>晒单分享</li>
+            <li><a>优惠爆料</a></li>
+            <li><a>晒单分享<a></li>
             <li>经验投稿</li>
             <li>待我审核</li>
             <li>我的爆料</li>
         </ul>    
     </div>
-    <div class="clearfix"></div>
+   
     <div class="header">
-        <div><span>标题</span><input type='text'></div>
+        <a><span>标题</span><input type='text'></a>
+        <a><span>品类</span><select><option>item1</option><option>item2</option></select></a>
+        <a><span>状态</span><select><option>item1</option><option>item2</option></select></a>
+        <a><span>商家来源</span><select><option>item1</option><option>item2</option></select></a>
+        <button>查询</button>
     </div>
+    <div class="batch">
+        <button>批量认领</button>
+        <button>批量分配</button>
+        <button>批量废除</button>
+    </div>
+    <table class="baoliao">
+        <thead>
+            <th><input type="checkbox"></th>
+            <th>商家来源</th>
+            <th>优惠链接</th>
+            <th>标题</th>
+            <th>商品价格</th>
+            <th>商品分类</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>亚马逊</td>
+                <td>http://www.amazon.cn</td>
+                <td>Fish 阿舒服的</td>
+                <td>300</td>
+                <td>玩具</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>亚马逊</td>
+                <td>http://www.amazon.cn</td>
+                <td>Fish 阿舒服的</td>
+                <td>300</td>
+                <td>玩具</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
