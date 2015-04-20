@@ -17,7 +17,12 @@ gulp.task('server', function () {
     });
 });
 
+gulp.task('html', function () {
+    gulp.src('src/**/*.html')
+        .pipe(connect.reload());
+});
 gulp.task('watch', function () {
+    gulp.watch('src/**/*.html', ['html']);
     gulp.watch(['src/css/less/*.less'], ['less']);
 });
 

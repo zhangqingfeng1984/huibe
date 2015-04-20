@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Baidu Hui BE</title>
+
+    <link rel="stylesheet" href="/src/css/app.css">
+
+    <!-- Bootstrap -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-pills">
+            <li><a href="#baoliao" class="active">优惠爆料</a></li>
+            <li><a href="#shaidan">晒单分享</a></li>
+            <li><a href="#jingyan">经验投稿</a></li>
+            <li><a href="#shenghe">待我审核</a></li>
+          </ul>       
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="search-creteria">
+            <div class="field">
+              <label>标题</label>
+              <input type="text" class="biaoti">
+            </div>
+            <div class="field">
+              <label>品类</label>
+              <select>
+                <option>单品</option>
+                <option>多品</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>状态</label>
+              <select>
+                <option>已分配</option>
+                <option>待分配</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>商家来源</label>
+              <select>
+                <option>京东商城</option>
+                <option>亚马逊</option>
+              </select>
+            </div>
+            <div class="field">
+              <submit class="btn btn-primary btn-xs">查询</submit>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="batch-actions">
+            <div class="btn btn-primary">批量认领</div>
+            <div class="btn btn-primary">批量分配</div>
+            <div class="btn btn-primary">批量废弃</div>
+          </div>
+        </div>    
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-bordered table-striped table-hover">
+            <thead>
+              <tr>
+                <th><input type="checkbox"></th>
+                <th>商家来源</th>
+                <th>优惠链接</th>
+                <th>标题</th>
+                <th>商品价格</th>
+                <th>商品分类</th>
+                <th>图片</th>
+                <th>推荐理由</th>
+                <th>相关其他链接</th>
+                <th>爆料人</th>
+                <th>爆料时间</th>
+                <th>状态</th>
+                <th>标注／备注</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>亚马逊</td>
+                <td>http://www.amazon.cn/dp/bool?t=100</td>
+                <td>Fisher Price飞行啊舒服</td>
+                <td>300</td>
+                <td>玩具</td>
+                <td><div class="imageview"><img class='img-thumbnail'  src="/src/images/product.jpg"></div></td>
+                <td>双语版学习单词满家是电风扇</td>
+                <td>http://www.amazon.com</td>
+                <td>angle</td>
+                <td>14:29 2014/12/12</td>
+                <td>待分配</td>
+                <td>无</td>
+                <td>领取</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>亚马逊</td>
+                <td>http://www.amazon.cn/dp/bool?t=100</td>
+                <td>Fisher Price飞行啊舒服</td>
+                <td>300</td>
+                <td>玩具</td>
+                <td><div class="imageview"><img class='img-thumbnail'  src="/src/images/product.jpg"></div></td>
+                <td>双语版学习单词满家是电风扇</td>
+                <td>http://www.amazon.com</td>
+                <td>angle</td>
+                <td>14:29 2014/12/12</td>
+                <td>待分配</td>
+                <td>无</td>
+                <td>领取</td>
+              </tr><tr>
+                <td><input type="checkbox"></td>
+                <td>亚马逊</td>
+                <td>http://www.amazon.cn/dp/bool?t=100</td>
+                <td>Fisher Price飞行啊舒服</td>
+                <td>300</td>
+                <td>玩具</td>
+                <td><div class="imageview"><img class='img-thumbnail' src="/src/images/product.jpg"></div></td>
+                <td>双语版学习单词满家是电风扇</td>
+                <td>http://www.amazon.com</td>
+                <td>angle</td>
+                <td>14:29 2014/12/12</td>
+                <td>待分配</td>
+                <td>无</td>
+                <td>领取</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="center-block">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>       
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

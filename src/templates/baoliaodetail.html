@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Baidu Hui BE</title>
+
+    <link rel="stylesheet" href="/src/css/app.css">
+
+    <!-- Bootstrap -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="panel panel-default baoliaodetail">
+          <div class="panel-heading">
+            <h4 class="caption">优惠爆料</h4>
+            <div class="close">x</div>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-2">
+                <span class="pull-right">优惠链接:</span>
+              </div>
+              <div class="col-md-10">
+                <input type="text" class="col-md-11">
+                <div class="btn btn-primary btn-xs pull-right">打开链接</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <span class="pull-right">标题:</span>
+              </div>
+              <div class="col-md-10">
+                <input type="text" value="Fisher Price小狗跑学习桌">
+                <span>副标题:</span>
+                <input type="text" value="原价300现价280包邮">
+                <span>商家来源:</span>
+                <input type="text" value="亚马逊">    
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <span class="pull-right">原价:</span>
+              </div>
+              <div class="col-md-10">
+                <input type="text" value="300">
+                <label for="">元</label>
+                <span>现价:</span>
+                <input type="text">
+                <label for="">元</label>
+                <span>爆料人:<span>
+                <label class="reporter" title="超连至用户，管理该用户信息">Angle</label>
+                <span>爆料时间:</span>
+                <input type="text" value="12:29 2014/11/12">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-2">
+                <span class="pull-right">爆料性质:</span>
+              </div>
+              <div class="col-md-10">
+                <select>
+                  <option>单商品</option>
+                  <option>多商品</option>
+                </select>
+                <span>发布频道:</span>
+                <select>
+                  <option>优惠频道</option>
+                  <option>优惠频道</option>
+                </select>
+                <span>价格曲线:<span>
+                <span class="chart" title="鼠标上移查看大图">
+                  <img class="img-thumbnail" src="/src/images/product.jpg">
+                </span>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="suggest-category">
+                <span>参考分类：</span>
+                <a>母婴用品》</a>
+                <a>玩具乐器》</a>
+                <a>益智玩具》</a>
+                <a>益智玩具》</a> 
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="product-category">
+                <span>商品分类：</span>
+                <select>
+                  <option>母婴用品</option>
+                  <option>母婴用品</option>
+                  <option>母婴用品</option>
+                </select>
+                <select>
+                  <option>玩具乐器</option>
+                  <option>玩具乐器</option>
+                  <option>玩具乐器</option>
+                </select>
+                <select>
+                  <option>母婴用品</option>
+                  <option>母婴用品</option>
+                  <option>母婴用品</option>
+                </select>
+                <select>
+                  <option>玩具乐器</option>
+                  <option>玩具乐器</option>
+                  <option>玩具乐器</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <span>图片：</span>
+              <div class="pictures pull-right"> 
+                <div class="picture">
+                  <div class="pic-wrapper">
+                    <img src="/src/images/product.jpg" alt="" class="img-thumbnail">  
+                  </div>
+                  <div class="delete">删除</div>
+                </div>
+                <div class="picture">
+                  <div class="pic-wrapper">
+                    <img src="/src/images/product.jpg" alt="" class="img-thumbnail">  
+                  </div>
+                  <div class="delete">删除</div>
+                </div>
+                <div class="picture">
+                  <div class="pic-wrapper">
+                    <img src="/src/images/product.jpg" alt="" class="img-thumbnail">  
+                  </div>
+                  <div class="delete">删除</div>
+                </div>
+                <div class="picture">
+                 <div class="pic-wrapper last">
+                   <a href="" class="upload">点击上传</a>
+                 </div>
+                 <div class="delete"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <span>推荐理由：</span>
+            </div>
+            <div class="col-md-10">
+              <textarea class="comment comment-tuijian" name="" id="" cols="30" rows="10">文字＋超连＋图片＋视频</textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <span>相关备注：</span>
+            </div>
+            <div class="col-md-10">
+              <textarea class="comment comment-beizhu" name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque odio dolore tenetur excepturi sunt, suscipit officia iste harum nobis ab animi veritatis ad alias iusto totam, atque soluta, temporibus accusantium.</textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <span>操作记录：</span>
+            </div>
+            <div class="col-md-10">
+              <textarea class="comment comment-caozuojilu" name="" id="" cols="30" rows="10">移交分配给审核员01，小编09 2013/12／23 12:22
+              已认领 小编02 2014/12/13
+              </textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <span>拒绝原因：</span>
+            </div>
+            <div class="col-md-10">
+              <select name="" id="">
+                <option>其他原因</option>
+                <option>其他原因</option>
+                <option>其他原因</option>
+              </select>
+              <span class='warning'>(＊拒绝爆料操作时内容为必填)</span>
+              <textarea class="comment comment-reject" name="" id="" cols="30" rows="10">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, saepe eum quis ea veniam. Iure ea necessitatibus nemo labore vitae magni fugiat pariatur fuga! Dolores nostrum iste libero voluptatem pariatur.
+              </textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="operations center-block">
+                <button class="btn btn-alert btn-md">内容预览</button>
+                <button class="btn btn-alert btn-md">通过</button>
+                <button class="btn btn-alert btn-md">拒绝</button>
+                <button class="btn btn-alert btn-md">废弃</button>
+                <button class="btn btn-alert btn-md">移交分配</button>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

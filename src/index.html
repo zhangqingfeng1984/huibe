@@ -3,65 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Baidu Hui Backend Control System</title>
-    <link rel="stylesheet" href="css/app.css">
-    <!--
-    <script src='../bower_components/jquery/dist/jquery.min.js'></script>
-    <script src='../bower_components/underscore/underscore-min.js'></script>
-    <script src='../bower_components/backbone/backbone.js'></script>
-    -->
+    <link rel="stylesheet" href="../src/css/app.css">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <script src='../bower_components/requirejs/require.js' data-main='js/main'></script>
     
 </head>
 <body>
-    <div class="shortcut">
-        <ul>
-            <li><a>优惠爆料</a></li>
-            <li><a>晒单分享<a></li>
-            <li>经验投稿</li>
-            <li>待我审核</li>
-            <li>我的爆料</li>
-        </ul>    
-    </div>
-   
-    <div class="header">
-        <a><span>标题</span><input type='text'></a>
-        <a><span>品类</span><select><option>item1</option><option>item2</option></select></a>
-        <a><span>状态</span><select><option>item1</option><option>item2</option></select></a>
-        <a><span>商家来源</span><select><option>item1</option><option>item2</option></select></a>
-        <button>查询</button>
-    </div>
-    <div class="batch">
-        <button>批量认领</button>
-        <button>批量分配</button>
-        <button>批量废除</button>
-    </div>
-    <table class="baoliao">
-        <thead>
-            <th><input type="checkbox"></th>
-            <th>商家来源</th>
-            <th>优惠链接</th>
-            <th>标题</th>
-            <th>商品价格</th>
-            <th>商品分类</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td><input type="checkbox"></td>
-                <td>亚马逊</td>
-                <td>http://www.amazon.cn</td>
-                <td>Fish 阿舒服的</td>
-                <td>300</td>
-                <td>玩具</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox"></td>
-                <td>亚马逊</td>
-                <td>http://www.amazon.cn</td>
-                <td>Fish 阿舒服的</td>
-                <td>300</td>
-                <td>玩具</td>
-            </tr>
-        </tbody>
-    </table>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-pills">
+            <li><a href="#baoliao">优惠爆料</a></li>
+            <li><a href="#shaidan">晒单分享</a></li>
+            <li><a href="#jingyan">经验投稿</a></li>
+            <li><a href="#shenghe">待我审核</a></li>
+          </ul>       
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <div id="page"></div>
+          </div>
+      </div>
+  </div>
 </body>
 </html>
