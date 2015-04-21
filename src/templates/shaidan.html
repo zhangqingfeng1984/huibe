@@ -6,26 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>Baidu Hui BE</title>
-
     <link rel="stylesheet" href="/src/css/app.css">
-
     <!-- Bootstrap -->
     <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="container shaidan">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
           <ul class="nav nav-pills">
@@ -33,130 +29,136 @@
             <li><a href="#" class="active">晒单分享</a></li>
             <li><a href="#">经验投稿</a></li>
             <li><a href="#">待我审核</a></li>
-          </ul>       
+          </ul>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <div class="baoliao-search-creteria">
-            <div class="col-md-2 sector">
-              <label>标题</label>
-              <input type="text" class="biaoti">
-            </div>
-            <div class="col-md-2 sector">
-              <label>类型</label>
-              <select>
-                <option>单篇</option>
-                <option>多篇</option>
-              </select>
-            </div>
-            <div class="col-md-2 sector">
-              <label>状态</label>
-              <select>
-                <option>已分配</option>
-                <option>待分配</option>
-              </select>
-            </div>
-            <div class="sector">
-              <submit class="btn btn-primary btn-xs">查询</submit>
+          <div id="page">
+            <div class="shaidan">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="baoliao-search-creteria">
+                    <div class="col-md-2 sector">
+                      <label>标题</label>
+                      <input type="text" class="biaoti">
+                    </div>
+                    <div class="col-md-2 sector">
+                      <label>类型</label>
+                      <select>
+                        <option>单篇</option>
+                        <option>多篇</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2 sector">
+                      <label>状态</label>
+                      <select>
+                        <option>已分配</option>
+                        <option>待分配</option>
+                      </select>
+                    </div>
+                    <div class="sector">
+                      <submit class="btn btn-primary btn-xs query">查询</submit>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="controls">
+                    <div class="btn btn-primary">批量认领</div>
+                    <div class="btn btn-primary">批量分配</div>
+                    <div class="btn btn-primary">批量废弃</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th><input type="checkbox"></th>
+                        <th>晒单类型</th>
+                        <th>标题</th>
+                        <th>晒单内容</th>
+                        <th>图片</th>
+                        <th>用户备注</th>
+                        <th>晒单人</th>
+                        <th>晒单时间</th>
+                        <th>审核状态</th>
+                        <th>标注／备注</th>
+                        <th>操作</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>单篇</td>
+                        <td>3倍价钱多少：罗技300使用感受</td>
+                        <td>Fisher Price飞行啊舒服</td>
+                        <td><div class="imageview"><img class='img-thumbnail'  src="/src/images/product.jpg"></div></td>
+                        <td>希望小编酌情删减，万谢</td>
+                        <td>angle</td>
+                        <td>14:29 2014/12/12</td>
+                        <td>待分配</td>
+                        <td>无</td>
+                        <td>领取,移交分配，查看／编辑，标注／备注，废弃</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>单篇</td>
+                        <td>3倍价钱多少：罗技300使用感受</td>
+                        <td>Fisher Price飞行啊舒服</td>
+                        <td><div class="imageview"><img class='img-thumbnail'  src="/src/images/product.jpg"></div></td>
+                        <td>希望小编酌情删减，万谢</td>
+                        <td>angle</td>
+                        <td>14:29 2014/12/12</td>
+                        <td>待分配</td>
+                        <td>无</td>
+                        <td>领取,移交分配，查看／编辑，标注／备注，废弃</td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox"></td>
+                        <td>单篇</td>
+                        <td>3倍价钱多少：罗技300使用感受</td>
+                        <td>Fisher Price飞行啊舒服</td>
+                        <td><div class="imageview"><img class='img-thumbnail'  src="/src/images/product.jpg"></div></td>
+                        <td>希望小编酌情删减，万谢</td>
+                        <td>angle</td>
+                        <td>14:29 2014/12/12</td>
+                        <td>待分配</td>
+                        <td>无</td>
+                        <td>领取,移交分配，查看／编辑，标注／备注，废弃</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <nav class="center-block">
+                    <ul class="pagination">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="controls">
-            <div class="btn btn-primary">批量认领</div>
-            <div class="btn btn-primary">批量分配</div>
-            <div class="btn btn-primary">批量废弃</div>
-          </div>
-        </div>    
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <table class="table table-bordered table-striped table-hover">
-            <thead>
-              <tr>
-                <th><input type="checkbox"></th>
-                <th>晒单类型</th>
-                <th>标题</th>
-                <th>晒单内容</th>
-                <th>图片</th>
-                <th>用户备注</th>
-                <th>晒单人</th>
-                <th>晒单时间</th>
-                <th>审核状态</th>
-                <th>标注／备注</th>
-                <th>操作</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>单篇</td>
-                <td>3倍价钱多少：罗技300使用感受</td>
-                <td>Fisher Price飞行啊舒服</td>
-                <td><div class="imageview"><img class='img-thumbnail'  src="/src/images/product.jpg"></div></td>
-                <td>希望小编酌情删减，万谢</td>
-                <td>angle</td>
-                <td>14:29 2014/12/12</td>
-                <td>待分配</td>
-                <td>无</td>
-                <td>领取,移交分配，查看／编辑，标注／备注，废弃</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>单篇</td>
-                <td>3倍价钱多少：罗技300使用感受</td>
-                <td>Fisher Price飞行啊舒服</td>
-                <td><div class="imageview"><img class='img-thumbnail'  src="/src/images/product.jpg"></div></td>
-                <td>希望小编酌情删减，万谢</td>
-                <td>angle</td>
-                <td>14:29 2014/12/12</td>
-                <td>待分配</td>
-                <td>无</td>
-                <td>领取,移交分配，查看／编辑，标注／备注，废弃</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td>单篇</td>
-                <td>3倍价钱多少：罗技300使用感受</td>
-                <td>Fisher Price飞行啊舒服</td>
-                <td><div class="imageview"><img class='img-thumbnail'  src="/src/images/product.jpg"></div></td>
-                <td>希望小编酌情删减，万谢</td>
-                <td>angle</td>
-                <td>14:29 2014/12/12</td>
-                <td>待分配</td>
-                <td>无</td>
-                <td>领取,移交分配，查看／编辑，标注／备注，废弃</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <nav class="center-block">
-            <ul class="pagination">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>       
         </div>
       </div>
     </div>

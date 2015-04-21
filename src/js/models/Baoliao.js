@@ -16,8 +16,7 @@ define(
                 user: null,
                 date: null,
                 status: STATUS.DAI_FENGPEI,
-                mark: null,
-                operations: ['take', 'edit', 'reject']
+                mark: null
             }
         });
         return Baoliao;

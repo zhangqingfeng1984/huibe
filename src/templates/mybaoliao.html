@@ -19,23 +19,28 @@
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function () {
+      $('.btn-zibao').click(function(){
+        window.location.href = "http://localhost:8080/src/templates/xiaobianzibao.html";
+      });
+    });
+    </script>
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <ul class="nav nav-pills">
-            <li><a href="#baoliao" class="active">优惠爆料</a></li>
-            <li><a href="#shaidan">晒单分享</a></li>
-            <li><a href="#jingyan">经验投稿</a></li>
-            <li><a href="#shenghe">待我审核</a></li>
+            <li><a href="#baoliao" class="active">我的爆料</a></li>
           </ul>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
           <div id="page">
-            <div class="baoliao">
+            <div class="mybaoliao">
               <div class="row">
                 <div class="col-md-12">
                   <div class="search-creteria">
@@ -46,15 +51,15 @@
                     <div class="field">
                       <label>品类</label>
                       <select name="category">
-                        <option>单品</option>
-                        <option>多品</option>
+                        <option>全品类</option>
+                        <option>单品类</option>
                       </select>
                     </div>
                     <div class="field">
                       <label>状态</label>
                       <select name="status">
-                        <option>已分配</option>
-                        <option>待分配</option>
+                        <option>已保存</option>
+                        <option>未保存</option>
                       </select>
                     </div>
                     <div class="field">
@@ -73,8 +78,9 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="batch-actions">
-                    <div class="btn btn-primary">批量认领</div>                
-                    <div class="btn btn-primary">批量废弃</div>
+                    <div class="btn btn-primary btn-zibao">小内自爆</div>
+                    <div class="btn btn-primary">批量发布</div>
+                    <div class="btn btn-primary">批量删除</div>
                   </div>
                 </div>
               </div>
@@ -82,6 +88,22 @@
               <div class="row">
                 <div class="col-md-12">
                   <table class="table table-bordered table-striped table-hover">
+                    <colgroup>
+                      <col width="10">
+                      <col width="20">
+                      <col width="30">
+                      <col width="40">
+                      <col width="50">
+                      <col width="60">
+                      <col width="350">
+                      <col width="280">
+                      <col width="90">
+                      <col width="100">
+                      <col width="110">
+                      <col width="120">
+                      <col width="130">
+                      <col width="240">
+                    </colgroup>
                     <thead>
                       <tr>
                         <th><input type="checkbox" class="checkAll"></th>
@@ -111,11 +133,18 @@
                         <td><div class="imageview"><img class='img-thumbnail'  src="/src/images/product.jpg"></div></td>
                         <td>双语版学习单词满家是电风扇</td>
                         <td>http://www.amazon.com</td>
-                        <td>angle</td>
+                        <td>小编01</td>
                         <td>14:29 2014/12/12</td>
                         <td>待分配</td>
                         <td>无</td>
-                        <td>领取</td>
+                        <td>
+                          <div class='actions'>
+                            <div><span>发布</span></div>
+                            <div><span>查看／编辑</span></div>
+                            <div><span>备注</span></div>
+                            <div><span>删除</span></div>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <td><input type="checkbox"></td>
@@ -127,27 +156,19 @@
                         <td><div class="imageview"><img class='img-thumbnail'  src="/src/images/product.jpg"></div></td>
                         <td>双语版学习单词满家是电风扇</td>
                         <td>http://www.amazon.com</td>
-                        <td>angle</td>
+                        <td>小编01</td>
                         <td>14:29 2014/12/12</td>
                         <td>待分配</td>
                         <td>无</td>
-                        <td>领取</td>
-                      </tr><tr>
-                      <td><input type="checkbox"></td>
-                      <td>亚马逊</td>
-                      <td>http://www.amazon.cn/dp/bool?t=100</td>
-                      <td>Fisher Price飞行啊舒服</td>
-                      <td>300</td>
-                      <td>玩具</td>
-                      <td><div class="imageview"><img class='img-thumbnail' src="/src/images/product.jpg"></div></td>
-                      <td>双语版学习单词满家是电风扇</td>
-                      <td>http://www.amazon.com</td>
-                      <td>angle</td>
-                      <td>14:29 2014/12/12</td>
-                      <td>待分配</td>
-                      <td>无</td>
-                      <td>领取</td>
-                    </tr>
+                        <td>
+                          <div class='actions'>
+                            <div><span>发布</span></div>
+                            <div><span>查看／编辑</span></div>
+                            <div><span>备注</span></div>
+                            <div><span>删除</span></div>
+                          </div>
+                        </td>
+                      </tr>
                   </tbody>
                 </table>
               </div>
